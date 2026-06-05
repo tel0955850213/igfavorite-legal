@@ -16,10 +16,22 @@
 </head>
 <body>
 <h1>📍 存起來</h1>
-<p>從 Instagram、Threads 一鍵儲存餐廳、景點、咖啡廳</p>
+<p id="tagline">從 Instagram、Threads 一鍵儲存餐廳、景點、咖啡廳</p>
 <div class="links">
-  <a href="privacy.html" class="privacy">隱私權政策</a>
-  <a href="terms.html" class="terms">服務條款</a>
+  <a href="privacy.html" class="privacy" id="lnk-privacy">隱私權政策</a>
+  <a href="terms.html" class="terms" id="lnk-terms">服務條款</a>
 </div>
+<script>
+  (function () {
+    var nav = (navigator.language || 'en').toLowerCase();
+    if (nav.indexOf('zh') !== 0) {
+      document.documentElement.lang = 'en';
+      document.getElementById('tagline').textContent =
+        'Save restaurants, attractions, and cafés from Instagram and Threads in one tap';
+      document.getElementById('lnk-privacy').textContent = 'Privacy Policy';
+      document.getElementById('lnk-terms').textContent = 'Terms of Service';
+    }
+  })();
+</script>
 </body>
 </html>

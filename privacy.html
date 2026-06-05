@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>隱私權政策 – 存起來</title>
+<title>隱私權政策 – 存起來 / Privacy Policy</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 24px 20px; color: #333; line-height: 1.7; }
   h1 { font-size: 26px; color: #2C3E50; margin-bottom: 4px; }
@@ -15,9 +15,21 @@
   li { font-size: 15px; color: #555; margin-bottom: 4px; }
   strong { color: #333; }
   .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 13px; color: #aaa; text-align: center; }
+  .lang-switch { position: sticky; top: 0; background: rgba(255,255,255,0.92); backdrop-filter: blur(6px); display: flex; gap: 6px; justify-content: flex-end; padding: 10px 0; margin: -24px -20px 0; padding-right: 20px; z-index: 10; }
+  .lang-switch button { border: 1px solid #4ECDC4; background: #fff; color: #4ECDC4; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600; cursor: pointer; }
+  .lang-switch button.active { background: #4ECDC4; color: #fff; }
+  [data-lang] { display: none; }
+  [data-lang].show { display: block; }
 </style>
 </head>
 <body>
+<div class="lang-switch">
+  <button id="btn-zh" onclick="setLang('zh')">中文</button>
+  <button id="btn-en" onclick="setLang('en')">English</button>
+</div>
+
+<!-- ───────────── 中文 ───────────── -->
+<div data-lang="zh">
 <h1>隱私權政策</h1>
 <p class="updated">最後更新：2026 年 5 月 20 日</p>
 <p>本隱私權政策說明「存起來」（以下簡稱「本應用程式」或「我們」）如何蒐集、處理、使用、保存及保護您的個人資料。本政策以台灣個人資料保護法為主要基礎，並參考美國、澳洲及越南等地常見的隱私權要求，協助您了解本應用程式的資料處理方式。</p>
@@ -83,5 +95,94 @@
 <p>如對本隱私權政策有任何疑問，請透過設定頁面的意見回饋功能或寄信至 <a href="mailto:tel0955850213@yahoo.com.tw">tel0955850213@yahoo.com.tw</a> 與我們聯繫。</p>
 
 <div class="footer">© 2026 存起來 · <a href="terms.html">服務條款</a></div>
+</div>
+
+<!-- ───────────── English ───────────── -->
+<div data-lang="en">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: 20 May 2026</p>
+<p>This Privacy Policy explains how 存起來 ("the App" or "we") collects, processes, uses, retains, and protects your personal data. It is based primarily on Taiwan's Personal Data Protection Act and also references common privacy requirements in the United States, Australia, and Vietnam, to help you understand how the App handles data.</p>
+
+<h2>1. Data We Collect</h2>
+<h3>1.1 Account data</h3>
+<p>When you sign in with Apple or Google, we receive the necessary account identifiers, such as your user ID, email, display name, sign-in provider, and avatar URL. This data is used to maintain your sign-in state, sync your saved data, and identify the account owner.</p>
+<h3>1.2 Saved places and trip data</h3>
+<p>The place names, addresses, coordinates, categories, want-to-go/visited status, notes, trip lists, achievement records, source post URLs, and source text that you create or save in the App are used to provide the saving, map, list, sync, and achievement features.</p>
+<h3>1.3 Analysis and input data</h3>
+<p>When you paste or share a URL, text, or screenshot, we process that content to extract place information. The screenshot feature first runs OCR locally on your device using Apple Vision; the OCR'd text may be sent to our backend for place analysis.</p>
+<h3>1.4 Plan, quota, and advertising data</h3>
+<p>We record your plan type, monthly usage count, quota status, and offer-code redemption records. The free plan may show third-party ads; ad providers may process ad-related data under their own policies.</p>
+<h3>1.5 Support and deletion requests</h3>
+<p>When you contact us through feedback, a privacy request, or the account deletion flow, we may process your email, account identifiers, and the content of your request.</p>
+
+<h2>2. How We Use Data</h2>
+<ul>
+<li>Verify sign-in state, protect account security, and sync your saved data</li>
+<li>Analyze URLs, text, or OCR results to automatically find restaurants, attractions, lodging, cafés, or shopping places</li>
+<li>Look up place addresses, coordinates, and map information</li>
+<li>Manage monthly quota, membership plans, offer codes, and rewarded ads</li>
+<li>Provide support, handle errors, and respond to data access and deletion requests</li>
+<li>Maintain service security, detect abuse, and improve the user experience</li>
+</ul>
+
+<h2>3. Third-Party Services and Cross-Border Processing</h2>
+<h3>Authentication and cloud sync</h3>
+<p>We use third-party authentication and cloud database services to handle sign-in, secure storage, and syncing of saved places, trip lists, and achievements.</p>
+<h3>Map information services</h3>
+<p>We use a map information service to look up place addresses, coordinates, and place IDs. The content sent to the map service generally includes place names or cities, and does not include your account password.</p>
+<h3>AI analysis services</h3>
+<p>We use AI text-analysis services to find places from public URLs, post text, or OCR text. Please do not submit private or confidential content that you are not authorized to process.</p>
+<h3>Advertising and payments</h3>
+<p>The free plan may use third-party advertising services. Paid plans and refunds are handled by the Apple App Store under its policies; we do not receive your full credit card details.</p>
+<p><strong>We do not sell your personal data, and we do not provide your saved content to third parties as a standalone marketing list.</strong></p>
+
+<h2>4. Data Retention and Security</h2>
+<ul>
+<li>Saved data is stored locally on your device and synced to the cloud after you sign in</li>
+<li>Sign-in credentials are managed by the authentication service and your device's secure storage</li>
+<li>Quota and plan data are retained for as long as needed to provide the service</li>
+<li>When you delete your account, we delete or anonymize data that no longer needs to be retained</li>
+<li>We apply reasonable technical and organizational measures to protect data</li>
+</ul>
+
+<h2>5. Your Rights</h2>
+<p>Under applicable law, you may request to access, review, correct, supplement, stop the processing of, or delete your personal data. You can contact us via the feedback feature on the Settings page or by emailing <a href="mailto:tel0955850213@yahoo.com.tw">tel0955850213@yahoo.com.tw</a>.</p>
+
+<h2>6. Children and Minors</h2>
+<p>The App is not designed for children under 13 and does not knowingly collect personal data from children under 13. If you are under 13, please do not use the App.</p>
+
+<h2>7. Tracking Technologies and Device Data</h2>
+<p>The App is a native iOS application and does not use web cookies. We use device local-storage technology to save preferences and sign-in state. Third-party ad services may process ad-related data under their own policies.</p>
+
+<h2>8. Data Breaches and Security Incidents</h2>
+<p>If we become aware of unauthorized access to or a breach of your personal data and notification is required by law, we will take reasonable notification and remediation measures under applicable law.</p>
+
+<h2>9. Policy Updates</h2>
+<p>We may update this Policy due to service changes or legal requirements. For material changes, we will notify you within the App.</p>
+
+<h2>10. Contact Us</h2>
+<p>If you have any questions about this Privacy Policy, please contact us via the feedback feature on the Settings page or by emailing <a href="mailto:tel0955850213@yahoo.com.tw">tel0955850213@yahoo.com.tw</a>.</p>
+
+<div class="footer">© 2026 存起來 · <a href="terms.html">Terms of Service</a></div>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : 'en';
+    document.querySelectorAll('[data-lang]').forEach(function (el) {
+      el.classList.toggle('show', el.getAttribute('data-lang') === lang);
+    });
+    document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    try { localStorage.setItem('legalLang', lang); } catch (e) {}
+  }
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('legalLang'); } catch (e) {}
+    var nav = (navigator.language || 'en').toLowerCase();
+    var lang = saved || (nav.indexOf('zh') === 0 ? 'zh' : 'en');
+    setLang(lang);
+  })();
+</script>
 </body>
 </html>

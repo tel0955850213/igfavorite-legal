@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>服務條款 – 存起來</title>
+<title>服務條款 – 存起來 / Terms of Service</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; padding: 24px 20px; color: #333; line-height: 1.7; }
   h1 { font-size: 26px; color: #2C3E50; margin-bottom: 4px; }
@@ -14,9 +14,21 @@
   ul { margin: 4px 0 10px 0; padding-left: 20px; }
   li { font-size: 15px; color: #555; margin-bottom: 4px; }
   .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 13px; color: #aaa; text-align: center; }
+  .lang-switch { position: sticky; top: 0; background: rgba(255,255,255,0.92); backdrop-filter: blur(6px); display: flex; gap: 6px; justify-content: flex-end; padding: 10px 0; margin: -24px -20px 0; padding-right: 20px; z-index: 10; }
+  .lang-switch button { border: 1px solid #4ECDC4; background: #fff; color: #4ECDC4; border-radius: 999px; padding: 5px 14px; font-size: 13px; font-weight: 600; cursor: pointer; }
+  .lang-switch button.active { background: #4ECDC4; color: #fff; }
+  [data-lang] { display: none; }
+  [data-lang].show { display: block; }
 </style>
 </head>
 <body>
+<div class="lang-switch">
+  <button id="btn-zh" onclick="setLang('zh')">中文</button>
+  <button id="btn-en" onclick="setLang('en')">English</button>
+</div>
+
+<!-- ───────────── 中文 ───────────── -->
+<div data-lang="zh">
 <h1>服務條款</h1>
 <p class="updated">最後更新：2026 年 5 月 20 日</p>
 <p>請於使用「存起來」前詳閱以下服務條款。使用本應用程式即表示您同意本條款及隱私權政策。</p>
@@ -95,5 +107,107 @@
 <p>如有任何疑問，請透過設定頁面的意見回饋功能或寄信至 <a href="mailto:tel0955850213@yahoo.com.tw">tel0955850213@yahoo.com.tw</a> 與我們聯繫。</p>
 
 <div class="footer">© 2026 存起來 · <a href="privacy.html">隱私權政策</a></div>
+</div>
+
+<!-- ───────────── English ───────────── -->
+<div data-lang="en">
+<h1>Terms of Service</h1>
+<p class="updated">Last updated: 20 May 2026</p>
+<p>Please read these Terms of Service carefully before using 存起來. By using the App, you agree to these Terms and to the Privacy Policy.</p>
+
+<h2>1. Acceptance of Terms</h2>
+<p>By using 存起來, you confirm that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to any part of these Terms, please stop using the App.</p>
+
+<h2>2. Description of Service</h2>
+<p>The App is a travel and place-saving tool that helps you extract place information — such as restaurants, cafés, attractions, lodging, and shopping — from IG, Threads, text, URLs, or screenshot OCR content, and organize it into saved places, maps, trip lists, and achievement records.</p>
+<p>The service is not a travel agency, hotel-booking platform, restaurant-reservation service, or official merchant data source. Any place, address, category, or AI analysis result is provided for organization and reference only; please rely on the merchant or official website for actual information.</p>
+
+<h2>3. User Responsibilities</h2>
+<h3>3.1 Account security</h3>
+<ul>
+<li>You are responsible for keeping your account confidential and must not share it with others</li>
+<li>If you discover unauthorized use of your account, please notify us immediately via the in-app feedback feature</li>
+</ul>
+<h3>3.2 Lawful use</h3>
+<p>You agree not to:</p>
+<ul>
+<li>Use the App in any way that violates applicable laws or regulations</li>
+<li>Submit private, sensitive, confidential, or unlawful content you are not authorized to process</li>
+<li>Attempt to circumvent service limits or usage quotas by technical means</li>
+<li>Reverse-engineer or interfere with the App in any way</li>
+<li>Use automated programs to call the service in bulk</li>
+</ul>
+<h3>3.3 Social media and user content</h3>
+<ul>
+<li>Content you input into or share with the App should be data you have the legal right to use</li>
+<li>Please respect others' copyright and privacy and the terms of service of each third-party platform</li>
+</ul>
+
+<h2>4. Intellectual Property</h2>
+<p>The App's code, interface design, brand name, icons, and other service content are protected by copyright and other intellectual property laws. Without authorization, you may not copy, modify, distribute, or commercially exploit any part of the App.</p>
+
+<h2>5. Plans and Payment</h2>
+<h3>5.1 Free plan</h3>
+<p>The free plan provides a basic number of uses. Users may earn additional uses by watching rewarded ads. The free plan may display third-party ad content.</p>
+<h3>5.2 Paid plans</h3>
+<ul>
+<li>Subscription fees are charged through the Apple App Store and subject to Apple's payment policies</li>
+<li>Subscriptions auto-renew after the period ends; to cancel, do so at least 24 hours before expiry</li>
+<li>You can manage or cancel in iOS Settings → Apple ID → Subscriptions</li>
+<li>Refunds should be requested under the Apple App Store refund policy</li>
+</ul>
+<h3>5.3 Offer codes</h3>
+<ul>
+<li>Each offer code is for a single account only and is non-transferable after use</li>
+<li>Offer codes may not be transferred or sold in any form</li>
+</ul>
+
+<h2>6. Service Availability and Disclaimers</h2>
+<h3>6.1 Service availability</h3>
+<p>The App is provided "as is" and we do not guarantee 100% continuous availability. We do not guarantee immediate fixes for interruptions caused by maintenance, updates, third-party services, or force majeure.</p>
+<h3>6.2 AI analysis results</h3>
+<p>AI extraction, OCR recognition, and map lookup results may be incorrect or differ from the actual place. You should verify whether the place and address are correct.</p>
+<h3>6.3 Third-party platform statement</h3>
+<p>The App has no official agency, partnership, or endorsement relationship with Instagram, Threads, Google, Apple, or any social media platform.</p>
+<h3>6.4 Limitation of liability</h3>
+<p>To the maximum extent permitted by applicable law, we are not liable for damages arising from your use of the service, reliance on AI or map results, third-party service interruptions, or data errors.</p>
+
+<h2>7. Advertising</h2>
+<p>Free-plan users may see third-party ads or earn additional uses by watching rewarded ads. Ad content is handled by ad services under their own policies. Upgrading to a paid plan may remove ads depending on the plan.</p>
+
+<h2>8. Account Deletion and Termination</h2>
+<p>The App reserves the right to suspend or terminate accounts when users violate these Terms or attempt to abuse the service.</p>
+<p>You can request account deletion via "Delete account & data" on the Settings page or by emailing <a href="mailto:tel0955850213@yahoo.com.tw">tel0955850213@yahoo.com.tw</a>.</p>
+
+<h2>9. Amendments to Terms</h2>
+<p>These Terms may be updated from time to time. For material changes, the App will notify users. Continued use indicates your acceptance of the revised Terms.</p>
+
+<h2>10. Governing Law</h2>
+<p>These Terms are governed by and construed under the laws of the Republic of China (Taiwan). For disputes arising from these Terms, the parties agree to the Taiwan Taipei District Court as the court of first instance.</p>
+
+<h2>11. Contact</h2>
+<p>If you have any questions, please contact us via the feedback feature on the Settings page or by emailing <a href="mailto:tel0955850213@yahoo.com.tw">tel0955850213@yahoo.com.tw</a>.</p>
+
+<div class="footer">© 2026 存起來 · <a href="privacy.html">Privacy Policy</a></div>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : 'en';
+    document.querySelectorAll('[data-lang]').forEach(function (el) {
+      el.classList.toggle('show', el.getAttribute('data-lang') === lang);
+    });
+    document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    try { localStorage.setItem('legalLang', lang); } catch (e) {}
+  }
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('legalLang'); } catch (e) {}
+    var nav = (navigator.language || 'en').toLowerCase();
+    var lang = saved || (nav.indexOf('zh') === 0 ? 'zh' : 'en');
+    setLang(lang);
+  })();
+</script>
 </body>
 </html>
